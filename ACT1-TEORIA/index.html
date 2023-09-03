@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Mi Jardín</title>
+    <style>
+        .plantas-categoria {
+            display: none;
+        }
+
+        #interior:checked ~ #plantas-interior,
+        #exterior:checked ~ #plantas-exterior {
+            display: block;
+        }
+        #actividad1 {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #A0D8B0;
+            border: 2px solid #FF0000; /* Borde rojo */
+        }
+
+        #mostrar-actividad1:checked ~ #actividad1 {
+            display: block;
+        }
+
+        #actividad1 a {
+            color: #156e0c; /* Color de enlace */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #mostrar-actividad1{
+            background-color: #156e0c;
+        }
+        #actividad1 a:hover {
+            color: #0ecf07; /* Color de enlace al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="quien-mantiene.html">Quién Mantiene</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Mi Jardín</h1>
+        <label for="interior">Plantas de Interior</label>
+        <input type="radio" id="interior" name="categoria" checked>
+        
+        <label for="exterior">Plantas de Exterior</label>
+        <input type="radio" id="exterior" name="categoria">
+
+    
+    <div id="plantas-interior" class="plantas-categoria">
+        <h2>Plantas de Interior</h2>
+        <ul>
+            <!-- Lista de plantas de interior -->
+            <li>
+                <div class="planta">
+                    <a href="imágenes/planta1.jpg" target="_blank">
+                        <img src="imágenes/planta1.jpg" alt="Planta 1 de Interior">
+                    </a>
+            
+                    <a href="info/planta1.pdf" target="_blank">PDF - Planta 1 de Interior</a>
+                </div>
+            </li>
+            <li>
+                <div class="planta">
+                    <a href="imágenes/planta2.jpg" target="_blank">
+                        <img src="imágenes/planta2.jpg" alt="Planta 2 de Interior">
+                    </a>
+                    <a href="info/planta2.pdf" target="_blank">PDF - Planta 2 de Interior</a>
+                </div>
+            </li>
+            <li>
+                <div class="planta">
+                    <a href="imágenes/planta3.jpg" target="_blank">
+                        <img src="imágenes/planta3.jpg" alt="Planta 3 de Interior">
+                    </a>
+                    <a href="info/planta3.pdf" target="_blank">PDF - Planta 3 de Interior</a>
+                </div>
+            </li>
+            <!-- Puedes agregar más plantas de interior aquí -->
+        </ul>
+    </div>
+
+    <div id="plantas-exterior" class="plantas-categoria">
+        <h2>Plantas de Exterior</h2>
+        <ul>
+            <!-- Lista de plantas de exterior -->
+            <li>
+                <div class="planta">
+                    <a href="imágenes/planta4.jpg" target="_blank">
+                        <img src="imágenes/planta4.jpg" alt="Planta 4 de Exterior">
+                    </a>
+                    <a href="info/planta4.pdf" target="_blank">PDF - Planta 4 de Exterior</a>
+                </div>
+            </li>
+            <li>
+                <div class="planta">
+                    <a href="imágenes/planta5.jpg" target="_blank">
+                        <img src="imágenes/planta5.jpg" alt="Planta 5 de Exterior">
+                    </a>
+                    <a href="info/planta5.pdf" target="_blank">PDF - Planta 5 de Exterior</a>
+                </div>
+            </li>
+            <li>
+                <div class="planta">
+                    <a href="imágenes/planta6.jpg" target="_blank">
+                        <img src="imágenes/planta6.jpg" alt="Planta 6 de Exterior">
+                    </a>
+                    <a href="info/planta6.pdf" target="_blank">PDF - Planta 6 de Exterior</a>
+                </div>
+            </li>
+            <!-- Puedes agregar más plantas de exterior aquí -->
+        </ul>
+    </div>
+    <!-- Casilla de verificación para mostrar la sección ACTIVIDAD 1 -->
+    <input type="checkbox" id="mostrar-actividad1" style="display: none;">
+    <label for="mostrar-actividad1">Mostrar ACTIVIDAD 1 - PROYECTO DE SOFTWARE</label>
+
+    <!-- Sección ACTIVIDAD 1 -->
+    <div id="actividad1">
+        <h2>ACTIVIDAD 1 - PROYECTO DE SOFTWARE</h2>
+        <p>Interactuá con chatGTP u otra IA similar  de manera tal de obtener un código que permita resolver la siguiente consigna.  Se solicita utilizar esta herramienta para luego realizar un análisis crítico sobre los resultados..</p>
+        <a href="#" id="enlaceActividad1">Enlace a otro recurso</a>
+    </div>
+</body>
+</html>
+
+
